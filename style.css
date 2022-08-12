@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;   
+}
+
+.orange-card {
+    background-image: url(images/icon-sedans.svg);
+    background-repeat: no-repeat;
+    background-position: 3rem 2rem;
+    background-color: hsl(31, 77%, 52%); 
+    width: 20rem;
+    height: 30rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.blue-card {
+    background-image: url(images/icon-suvs.svg);
+    background-repeat: no-repeat;
+    background-position: 3rem 2rem;
+    background-color: hsl(184, 100%, 22%); 
+    width: 20rem;
+    height: 30rem
+}
+
+.green-card {
+    background-image: url(images/icon-luxury.svg);
+    background-repeat: no-repeat;
+    background-position: 3rem 2rem;
+    background-color: hsl(179, 100%, 13%); 
+    width: 20rem;
+    height: 30rem;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1 {
+    margin-top: 7rem;
+    padding-left: 45px;
+    color: white;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 35px;
+}
+
+p {
+    line-height: 25px;
+    word-spacing: 2px;
+    padding: 3rem;
+    display: flex;
+    font-size: 15px;
+    font-family: 'Lexend Deca';
+    color: white;
+}
+
+.orange-card a {
+    color: hsl(31, 77%, 52%); 
+    text-decoration: none;
+}
+
+.blue-card a {
+    color:hsl(184, 100%, 22%); 
+    text-decoration: none;
+}
+
+.green-card a {
+    color:hsl(179, 100%, 13%);  
+    text-decoration: none;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 13px;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: inherit;
+    margin-left: 3rem;
+}
+
+.container button :hover {
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: inherit;
+    color: hsl(0, 0%, 95%);
+}
+
+ .attribution { 
+    font-size: 11px; text-align: center;
+    flex-wrap: wrap;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+
+}
+
+footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media(max-width: 900px) {
+    .container {       
+        flex-direction: column;
+    }
+    .model {
+        max-height: inherit;
+        max-width: 730px;
+    }
+    .orange-card {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+    .green-card {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+}
